@@ -1,0 +1,65 @@
+.reminder1 {
+
+  &__title {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #86f5cd;
+  }
+
+  &__details {
+    padding: 10px;
+    background-color: rgb(252, 252, 157);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: rgb(219, 238, 50) solid;
+
+
+    & > * + * {
+      margin-top: 5px;
+    }
+  }
+
+  &__description,
+  &__created-date,
+  &__last-modified-date {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  &__is-completed {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #0f0e0e;
+
+    & > input {
+      margin-right: 5px;
+    }
+  }
+
+  &__edit-button,
+  &__delete-button {
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+    // transition: background-color 0.2s ease-in-out;
+    background-color: aqua;
+    color: #000000;
+    
+
+
+   
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
